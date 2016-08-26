@@ -1,0 +1,90 @@
+html,body{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+body {
+    background: #202020;
+    font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+@font-face {
+    font-family: "Helve";
+    src: url('../fonts/Helve.otf') format('opentype');
+}
+.wrapper {
+    font-family: "Helve",Arial, sans-serif;
+    width: 640px;
+    margin: 0 auto;
+    font-size: 60px;
+}
+header {
+    height: 42px;
+    background: url(../images/status.png) no-repeat 0 0;
+}
+.btn-info {
+    background: #d6d6d9;
+}
+.btn-primary {
+    background: #f68810;
+    color: #fff;
+}
+.btn-default {
+    background: #ccc;
+
+}
+.calc-area {
+    text-align:right;
+    height: 240px;
+    min-height: 240px;
+    line-height: 240px;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 80px;
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    overflow: visible;
+}
+.col-1, .col-2 {
+    height:100px;
+}
+.col-1 {
+    width: 128px;
+}
+.col-2 {
+    width: 256px;
+}
+.km-btn {
+    font-weight: normal;
+    font-size: 40px;
+    text-align:center;
+     line-height: 99px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    height: 99px;
+    width: -webkit-calc(100% - 1px);
+    width: -moz-calc(100% - 1px);
+    width: calc(100% - 1px);
+    cursor: pointer;
+    -webkit-transition: all .2s linear 0s;
+    -moz-transition: all .2s linear 0s;
+    -ms-transition: all .2s linear 0s;
+    -o-transition: all .2s linear 0s;
+    transition: all .2s linear 0s;
+}
+.km-btn:hover {
+    -webkit-transform: scale(.95);
+    -moz-transform: scale(.95);
+    -ms-transform: scale(.95);
+    -o-transform: scale(.95);
+    transform: scale(.95);
+}
+.aa{
+    white-space: normal;;
+
+}

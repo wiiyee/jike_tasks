@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hao123换肤</title>
+    <link rel="stylesheet" href="css/neat.css" type="text/css">
+    <link rel="stylesheet" href="css/hao123.css" type="text/css">
+    <link rel="stylesheet" href="css/css1.css" type="text/css" id="linkSkin">
+</head>
+<body>
+<!--头部-->
+<header>
+    <!--头部--信息-->
+    <div class="head-title">
+        <div class="inner clearfix">
+            <a href="#" class="logo fl"> </a>
+            <a href="#" class="sethome fl font12 a1">设为首页</a>
+            <div class="head-col fl">
+                <div class="set-weather fl">
+                    <a href="#" class="dropdown fl ex-link">
+                        <span class="dib">北京</span>
+                        <span class="arr-down dib"></span>
+
+                    </a>
+                    <a href="#" class="weather fl ex-link">
+                        <i class="iconfont icon-taiyang0 font12"></i>
+                        <span class="dib">晴</span><span class="dib">3 ~ -7℃</span>
+
+                    </a>
+                </div>
+                <a href="#" class="ticketTip fl ex-link">
+                    <i class="iconfont icon-huochepiao green"></i>
+                    <span class="dib">春节抢票回家</span>
+
+                </a>
+            </div>
+            <div class="head-link fr lh60">
+                <a id="ex-link " class="ex-link fl" href="#"><i class="iconfont icon-touxiang"></i><span>wiiyee</span> </a>
+                <a class="ex-link fl" href="#"><i class="iconfont icon-youjian"></i><span href="#" class="dib ">邮箱</span></a>
+                <a class="ex-link fl" href="#"><i class="iconfont icon-liulanqi"></i><span href="#" class="dib">浏览器</span></a>
+                <div class="ex-link fl dropdown-menu showSkin"><span class="dib "> <i class="iconfont icon-huanfu "></i><span href="#" class="dib ">换肤</span> </span>
+                    <ul class="skin-group open" id="skinGroup">
+                        <li class="green-face face" onclick="changeSkin(1)"></li>
+                        <li class="red-face face" onclick="changeSkin(2)"></li>
+                        <li class="blue-face face" onclick="changeSkin(3)"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="head-banner fl"><img src="images/gome20160116.jpg" width="220" height="60" alt=""></div>
+        </div>
+    </div>
+    <!--头部--搜索表单-->
+    <div class="search-form clearfix">
+        <div class="inner  ">
+            <a class="search-logo fl" href="#"></a>
+
+            <div class="form-wrapper fl">
+                <form>
+                    <div class="search-area fl">
+                        <div class="dropdown fl">
+                            <a class="dropdown-menu2 dib" href="#">
+                                <span class="dib">网页</span>
+                                <span class="arr-down dib"></span>
+                            </a>
+                            <ul class="" style="display:none;">
+                                <li><a href="#">网页</a></li>
+                                <li><a href="#">网页</a></li>
+                                <li><a href="#">网页</a></li>
+                                <li><a href="#">网页</a></li>
+                                <li><a href="#">网页</a></li>
+                                <li><a href="#">网页</a></li>
+                                <li><a href="#">网页</a></li>
+                                <li><a href="#">网页</a></li>
+                                <li><a href="#">网页</a></li>
+                                <li><a href="#">网页</a></li>
+
+                            </ul>
+                        </div>
+
+                        <input type="text" class="search-txt fl">
+                        <span class="tips fl"></span></div>
+
+                    <button type="button" class="fl search-btn"></button>
+                </form>
+
+            </div>
+            <div class="search-notice fl">爆日本成人片拍摄行规</div>
+        </div>
+    </div>
+
+
+    <!--头部--热门搜索-->
+    <div class="hot-search"><span class="green">热搜:</span><a href="#">北京天气</a><a href="#">NBA</a><a href="#">太子妃升职记</a><a href="#">张曼玉被压倒</a><a href="#">韩雪拒喝尿</a><a
+            href="#">吴亦凡相亲</a>
+        <a href="#">千亿媳妇遭入侵</a><a href="#" class="green">更多</a>
+    </div>
+    <!--头部--导航-->
+    <nav class="head-nav">
+        <ul>
+            <li class="current"><a href="#"><span>首页</span><span class="divider"></span></a></li>
+            <li><a href="#"><span>电视剧</span><span class="divider"></span></a></li>
+            <li><a href="#"><span>最新电影</span><span class="divider"></span></a></li>
+            <li><a href="#"><span>新闻头条</span><span class="divider"></span></a></li>
+            <li><a href="#"><span>八卦娱乐</span><span class="divider"></span></a></li>
+            <li><a href="#"><span>军事热点</span><span class="divider"></span></a></li>
+            <li><a href="#"><span>热门游戏</span><span class="divider"></span></a></li>
+            <li><a href="#"><span>小游戏</span><span class="divider"></span></a></li>
+            <li><a href="#"><span>今日特价</span><span class="divider"></span></a></li>
+            <li><a href="#"><span>特价旅游</span><span class="divider"></span></a></li>
+            <li><a href="#"><span>生活服务</span></a></li>
+
+        </ul>
+    </nav>
+</header>
+<!--主体-->
+<article>
+    <!--侧边-->
+    <aside class="  fl">
+        <div class="sidebar clearfix">
+            <ul>
+                <li><i class="iconfont icon-dianshi "></i><a href="#">电视剧</a><span class="divilder">|</span><a href="#">综艺</a></li>
+                <li><i class="iconfont icon-youxi "></i><a href="#">游戏</a><span class="divilder">|</span><a href="#">小游戏</a></li>
+                <li><i class="iconfont icon-74 "></i><a href="#">电影</a><span class="divilder">|</span><a href="#">直播</a></li>
+                <li><i class="iconfont icon-svgmoban67 "></i><a href="#">动画</a><span class="divilder">|</span><a href="#">漫画</a></li>
+                <li><i class="iconfont icon-dutoutiao "></i><a href="#">头条</a><span class="divilder">|</span><a href="#">军事</a></li>
+                <li><i class="iconfont icon-lvyou "></i><a href="#">旅游</a><span class="divilder">|</span><a href="#">门票</a></li>
+                <li><i class="iconfont icon-caipiao "></i><a href="#">彩票</a><span class="divilder">|</span><a href="#">股票</a></li>
+                <li><i class="iconfont icon-gaoxiao "></i><a href="#">搞笑</a><span class="divilder">|</span><a href="#">小说</a></li>
+                <li><i class="iconfont icon-tejia "></i><a href="#">特价</a><span class="divilder">|</span><a href="#">海淘</a></li>
+                <li><i class="iconfont icon-jiaoyu "></i><a href="#">教育</a><span class="divilder">|</span><a href="#">理财</a></li>
+                <li><i class="iconfont icon-shenghuo "></i><a href="#">生活</a><span class="divilder">|</span><a href="#">天气</a></li>
+                <li><i class="iconfont icon-tubiao "></i><a href="#">美食</a><span class="divilder">|</span><a href="#">音乐</a></li>
+
+
+            </ul>
+        </div>
+        <div class="sidebar clearfix">
+            <ul>
+                <li><i class="iconfont icon-dianshi "></i><a href="#">电视剧</a><span class="divilder">|</span><a href="#">综艺</a></li>
+                <li><i class="iconfont icon-youxi "></i><a href="#">游戏</a><span class="divilder">|</span><a href="#">小游戏</a></li>
+                <li><i class="iconfont icon-74 "></i><a href="#">电影</a><span class="divilder">|</span><a href="#">直播</a></li>
+                <li><i class="iconfont icon-svgmoban67 "></i><a href="#">动画</a><span class="divilder">|</span><a href="#">漫画</a></li>
+                <li><i class="iconfont icon-dutoutiao "></i><a href="#">头条</a><span class="divilder">|</span><a href="#">军事</a></li>
+                <li><i class="iconfont icon-lvyou "></i><a href="#">旅游</a><span class="divilder">|</span><a href="#">门票</a></li>
+                <li><i class="iconfont icon-caipiao "></i><a href="#">彩票</a><span class="divilder">|</span><a href="#">股票</a></li>
+                <li><i class="iconfont icon-gaoxiao "></i><a href="#">搞笑</a><span class="divilder">|</span><a href="#">小说</a></li>
+                <li><i class="iconfont icon-tejia "></i><a href="#">特价</a><span class="divilder">|</span><a href="#">海淘</a></li>
+                <li><i class="iconfont icon-jiaoyu "></i><a href="#">教育</a><span class="divilder">|</span><a href="#">理财</a></li>
+                <li><i class="iconfont icon-shenghuo "></i><a href="#">生活</a><span class="divilder">|</span><a href="#">天气</a></li>
+                <li><i class="iconfont icon-tubiao "></i><a href="#">美食</a><span class="divilder">|</span><a href="#">音乐</a></li>
+
+
+            </ul>
+        </div>
+        <div class="sidebar clearfix">
+            <ul>
+                <li><i class="iconfont icon-dianshi "></i><a href="#">电视剧</a><span class="divilder">|</span><a href="#">综艺</a></li>
+                <li><i class="iconfont icon-youxi "></i><a href="#">游戏</a><span class="divilder">|</span><a href="#">小游戏</a></li>
+                <li><i class="iconfont icon-74 "></i><a href="#">电影</a><span class="divilder">|</span><a href="#">直播</a></li>
+                <li><i class="iconfont icon-svgmoban67 "></i><a href="#">动画</a><span class="divilder">|</span><a href="#">漫画</a></li>
+                <li><i class="iconfont icon-dutoutiao "></i><a href="#">头条</a><span class="divilder">|</span><a href="#">军事</a></li>
+                <li><i class="iconfont icon-lvyou "></i><a href="#">旅游</a><span class="divilder">|</span><a href="#">门票</a></li>
+                <li><i class="iconfont icon-caipiao "></i><a href="#">彩票</a><span class="divilder">|</span><a href="#">股票</a></li>
+                <li><i class="iconfont icon-gaoxiao "></i><a href="#">搞笑</a><span class="divilder">|</span><a href="#">小说</a></li>
+                <li><i class="iconfont icon-tejia "></i><a href="#">特价</a><span class="divilder">|</span><a href="#">海淘</a></li>
+                <li><i class="iconfont icon-jiaoyu "></i><a href="#">教育</a><span class="divilder">|</span><a href="#">理财</a></li>
+                <li><i class="iconfont icon-shenghuo "></i><a href="#">生活</a><span class="divilder">|</span><a href="#">天气</a></li>
+                <li><i class="iconfont icon-tubiao "></i><a href="#">美食</a><span class="divilder">|</span><a href="#">音乐</a></li>
+
+
+            </ul>
+        </div>
+    </aside>
+    <!--内容一-->
+    <section class="sites fr">
+        <ul class="clearfix">
+            <li><i class="icon-logo icon-baidu"></i><a href="#">百度</a><span>·</span><a href="">贴吧</a></li>
+            <li><i class="icon-logo icon-sina"></i><a href="#">新浪</a><span>·</span><a href="">微博</a></li>
+            <li><i class="icon-logo icon-sohu"></i><a href="#">搜狐</a><span>·</span><a href="">热点</a></li>
+            <li><i class="icon-logo icon-qq"></i><a href="#">腾讯</a></li>
+            <li><i class="icon-logo icon-163"></i><a href="#">网易</a><span>·</span><a href="">贴吧</a></li>
+            <li><i class="icon-logo icon-qqvideo"></i><a href="#">腾讯视频</a></li>
+            <li><i class="icon-logo icon-tmall"></i><a href="#">天猫</a></li>
+            <li><i class="icon-logo icon-ifeng"></i><a href="#">凤凰网</a></li>
+            <li><i class="icon-logo icon-taobao"></i><a href="#">淘宝网</a></li>
+            <li><i class="icon-logo icon-mfgame"></i><a href="#">免费游戏</a></li>
+            <li><i class="icon-logo icon-4399"></i><a href="#">4399游戏</a></li>
+            <li><i class="icon-logo icon-xinhua"></i><a href="#">新华</a></li>
+            <li><i class="icon-logo icon-jd"></i><a href="#">京东商城</a></li>
+            <li><i class="icon-logo icon-jhs"></i><a href="#">聚划算</a></li>
+            <li><i class="icon-logo icon-sale"></i><a href="#">近期特价</a></li>
+            <li><i class="icon-logo icon-hao123"></i><a href="#">hao123影视</a></li>
+            <li><i class="icon-logo icon-auto"></i><a href="#">汽车之家</a></li>
+            <li><i class="icon-logo icon-nuomi"></i><a href="#">百度糯米</a></li>
+        </ul>
+        <div class="divider"></div>
+        <ul class="clearfix">
+
+            <li><a href="#">东方财富</a><span>·</span><a href="">理财</a>
+            <li><a href="#">58 同 城</a></li>
+            <li><a href="#">搜 房 网</a></li>
+            <li><a href="#">携程旅行网</a></li>
+            <li><a href="#">PPTV聚力</a></li>
+            <li><a href="#">旅游•12306</a></li>
+            <li><a href="#">聚美优品</a></li>
+            <li><a href="#">赶 集 网</a></li>
+            <li><a href="#">易 车 网</a></li>
+            <li><a href="#">去哪儿网</a></li>
+            <li><a href="#">爱卡汽车</a></li>
+            <li><a href="#">工商银行</a></li>
+            <li><a href="#">唯 品 会</a></li>
+            <li><a href="#">同程旅游</a></li>
+            <li><a href="#">途牛旅游网</a></li>
+            <li><a href="#">彩票开奖</a></li>
+            <li><a href="#">太平洋汽车</a></li>
+            <li><a href="#">购物大全</a></li>
+            <li><a href="#">hao 到 家</a></li>
+            <li><a href="#">乐居•二手房</a></li>
+            <li><a href="#">中华英才网</a></li>
+            <li><a href="#">萌主页•动漫</a></li>
+            <li><a href="#">手机•正版传奇</a></li>
+            <li><a href="#">苏宁易购</a></li>
+            <li><a href="#">五折年货</a></li>
+            <li><a href="#">国美在线</a></li>
+            <li><a href="#">亚 马 逊</a></li>
+            <li><a href="#">五折年货</a></li>
+            <li><a href="#">1 号 店</a></li>
+            <li><a href="#">爱 淘 宝</a></li>
+            <li><a href="#">1 号 店</a></li>
+            <li><a href="#">携程机票</a></li>
+
+        </ul>
+        <a class="site-mange" href="#"><i class="iconfont icon-shezhi"></i></a>
+    </section>
+    <section class="sites fr">
+        <ul class="clearfix">
+            <li><i class="icon-logo icon-baidu"></i><a href="#">百度</a><span>·</span><a href="">贴吧</a></li>
+            <li><i class="icon-logo icon-sina"></i><a href="#">新浪</a><span>·</span><a href="">微博</a></li>
+            <li><i class="icon-logo icon-sohu"></i><a href="#">搜狐</a><span>·</span><a href="">热点</a></li>
+            <li><i class="icon-logo icon-qq"></i><a href="#">腾讯</a></li>
+            <li><i class="icon-logo icon-163"></i><a href="#">网易</a><span>·</span><a href="">贴吧</a></li>
+            <li><i class="icon-logo icon-qqvideo"></i><a href="#">腾讯视频</a></li>
+            <li><i class="icon-logo icon-tmall"></i><a href="#">天猫</a></li>
+            <li><i class="icon-logo icon-ifeng"></i><a href="#">凤凰网</a></li>
+            <li><i class="icon-logo icon-taobao"></i><a href="#">淘宝网</a></li>
+            <li><i class="icon-logo icon-mfgame"></i><a href="#">免费游戏</a></li>
+            <li><i class="icon-logo icon-4399"></i><a href="#">4399游戏</a></li>
+            <li><i class="icon-logo icon-xinhua"></i><a href="#">新华</a></li>
+            <li><i class="icon-logo icon-jd"></i><a href="#">京东商城</a></li>
+            <li><i class="icon-logo icon-jhs"></i><a href="#">聚划算</a></li>
+            <li><i class="icon-logo icon-sale"></i><a href="#">近期特价</a></li>
+            <li><i class="icon-logo icon-hao123"></i><a href="#">hao123影视</a></li>
+            <li><i class="icon-logo icon-auto"></i><a href="#">汽车之家</a></li>
+            <li><i class="icon-logo icon-nuomi"></i><a href="#">百度糯米</a></li>
+        </ul>
+        <div class="divider"></div>
+        <ul class="clearfix">
+
+            <li><a href="#">东方财富</a><span>·</span><a href="">理财</a>
+            <li><a href="#">58 同 城</a></li>
+            <li><a href="#">搜 房 网</a></li>
+            <li><a href="#">携程旅行网</a></li>
+            <li><a href="#">PPTV聚力</a></li>
+            <li><a href="#">旅游•12306</a></li>
+            <li><a href="#">聚美优品</a></li>
+            <li><a href="#">赶 集 网</a></li>
+            <li><a href="#">易 车 网</a></li>
+            <li><a href="#">去哪儿网</a></li>
+            <li><a href="#">爱卡汽车</a></li>
+            <li><a href="#">工商银行</a></li>
+            <li><a href="#">唯 品 会</a></li>
+            <li><a href="#">同程旅游</a></li>
+            <li><a href="#">途牛旅游网</a></li>
+            <li><a href="#">彩票开奖</a></li>
+            <li><a href="#">太平洋汽车</a></li>
+            <li><a href="#">购物大全</a></li>
+            <li><a href="#">hao 到 家</a></li>
+            <li><a href="#">乐居•二手房</a></li>
+            <li><a href="#">中华英才网</a></li>
+            <li><a href="#">萌主页•动漫</a></li>
+            <li><a href="#">手机•正版传奇</a></li>
+            <li><a href="#">苏宁易购</a></li>
+            <li><a href="#">五折年货</a></li>
+            <li><a href="#">国美在线</a></li>
+            <li><a href="#">亚 马 逊</a></li>
+            <li><a href="#">五折年货</a></li>
+            <li><a href="#">1 号 店</a></li>
+            <li><a href="#">爱 淘 宝</a></li>
+            <li><a href="#">1 号 店</a></li>
+            <li><a href="#">携程机票</a></li>
+
+        </ul>
+        <a class="site-mange" href="#"><i class="iconfont icon-shezhi"></i></a>
+    </section>
+</article>
+<script>
+    var showSkin = document.getElementsByClassName("showSkin")[0];
+
+    var skinGroup = document.getElementById("skinGroup");
+
+    var showSkinClass = showSkin.getAttribute("class");
+    var linkSkin = document.getElementById("linkSkin");
+    //    皮肤下拉
+    showSkin.onmouseover = function (e) {
+
+        this.setAttribute("class", showSkinClass + " current");
+        skinGroup.style.display = "block";
+
+    }
+    showSkin.onmouseout = function (e) {
+
+        this.setAttribute("class", showSkinClass);
+        skinGroup.style.display = "none";
+   }
+    function setCookie(cname,cvalue,exdays)
+    {
+        var d = new Date();
+        d.setTime(d.getTime()+(exdays*24*60*60*1000));
+        var expires = "expires="+d.toGMTString();
+        document.cookie = cname + "=" + cvalue + "; " + expires;
+    }
+//    function getCookie(cname) {
+//        if (document.cookie.length > 0) {
+//            c_start = document.cookie.indexOf(cname + "=")
+//            if (c_start != -1) {
+//                c_start = c_start + cname.length + 1
+//                c_end = document.cookie.indexOf(";", c_start)
+//                if (c_end == -1) c_end = document.cookie.length
+//                return unescape(document.cookie.substring(c_start, c_end))
+//            }
+//        }
+//        return ""
+//    }
+
+
+    function changeSkin(cssName) {
+
+        document.getElementById("linkSkin").href = "css\/css" + cssName + ".css";
+        this.setCookie("cssSkin",cssName);
+    }
+
+</script>
+</body>
+</html>

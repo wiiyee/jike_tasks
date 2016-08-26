@@ -1,0 +1,588 @@
+
+body {
+    background: #eff0f0 url(../images/hf_body_bg.png) repeat-x 0 0;
+    font: 14px/100% arial, "Microsoft YaHei";
+}
+
+.font16 {
+    font-size: 16px;
+}
+
+/*图标字体*/
+@font-face {
+    font-family: "iconfont";
+    src: url('../fonts/iconfont.eot'); /* IE9*/
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/iconfont.woff') format('woff'), /* chrome, firefox */ url('../fonts/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    display: inline-block;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-huochepiao:before {
+    content: "\e613";
+}
+
+.icon-tubiao:before {
+    content: "\e600";
+}
+
+.icon-touxiang:before {
+    content: "\e601";
+}
+
+.icon-dianshi:before {
+    content: "\e602";
+}
+
+.icon-74:before {
+    content: "\e603";
+}
+
+.icon-shezhi:before {
+    content: "\e604";
+}
+
+.icon-huanfu:before {
+    content: "\e605";
+}
+
+.icon-svgmoban67:before {
+    content: "\e606";
+}
+
+.icon-youxi:before {
+    content: "\e607";
+}
+
+.icon-lvyou:before {
+    content: "\e609";
+}
+
+.icon-dutoutiao:before {
+    content: "\e60a";
+}
+
+.icon-caipiao:before {
+    content: "\e60b";
+}
+
+.icon-gaoxiao:before {
+    content: "\e60c";
+}
+
+.icon-shenghuo:before {
+    content: "\e60d";
+}
+
+.icon-tejia:before {
+    content: "\e60e";
+}
+
+.icon-youjian:before {
+    content: "\e60f";
+}
+
+.icon-liulanqi:before {
+    content: "\e610";
+}
+
+.icon-jiaoyu:before {
+    content: "\e608";
+}
+
+.icon-tianjia:before {
+    content: "\e611";
+}
+
+.icon-taiyang0:before {
+    content: "\e612";
+}
+
+/*box布局*/
+header {
+    width: 100%;
+}
+
+.lh60 {
+    line-height: 60px;
+}
+
+.head-title .inner, .search-form, .hot-search, .head-nav, article {
+    width: 1190px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.head-title {
+    height: 61px;
+    font-size: 12px;
+    line-height: 60px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    background: url("../images/logo201509091.png") no-repeat 0 0;
+    width: 190px;
+    height: 60px;
+}
+
+.sethome {
+    width: 60px;
+    height: 24px;
+    background: url(../images/index_widthlg.png) no-repeat -20px -172px;
+    position: absolute;
+    top: 20px;
+    left: 192px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.arr-down {
+
+    width: 8px;
+    margin: -4px 5px 0;
+    vertical-align: middle;
+    height: 8px;
+    cursor: pointer;
+    border: 1px solid #999;
+    border-right: none;
+    border-top: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.area {
+
+}
+
+.head-col {
+    margin-left: 80px;
+    line-height: 60px;
+}
+
+.head-banner {
+    width: 220px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.head-link {
+    padding-right: 230px;
+}
+
+.ex-link {
+    cursor: pointer;
+    padding: 0 14px;
+    color: #999;
+    position: relative;
+
+}
+
+.ex-link:hover,.ex-link.current {
+    background: #f1f1f1;
+    color: #999;
+}
+
+.ex-link a {
+    padding-left: 4px;
+}
+
+.ex-link .skin-group {
+    position: absolute;
+    top: 60px;
+    background: #f1f1f1;
+    padding:0 20px;
+    left: 0;
+    z-index: 10;
+    display:none;
+}
+
+.ex-link .skin-group li {
+
+    height: 16px;
+    width: 60px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.ex-link .skin-group li:hover{
+    opacity:0.8;}
+.ex-link .skin-group li.green-face {
+    background: #22aa22;
+}
+
+.ex-link .skin-group li.red-face {
+    background: #f35c63;
+}
+
+.ex-link .skin-group li.blue-face {
+    background: #00b7ee;
+}
+
+/**/
+.search-form .inner {
+    height: 40px;
+    line-height: 40px;
+    margin: 42px 0px 0px 166px;
+
+}
+
+.search-logo {
+    margin-right: 20px;
+    width: 104px;
+    height: 40px;
+    background: url(../images/webv2.png) no-repeat 0 0;
+}
+
+.search-area {
+    width: 500px;
+    background: #fff;
+    height: 38px;
+    border: 1px solid #aaa;
+    box-shadow: inset 1px 1px 4px #ddd;
+}
+
+.search-area .search-txt {
+    border: none;
+
+    height: 38px;
+    font-size: 16px;
+    width: 420px;
+    background: none;
+    outline: none;
+}
+
+.dropdown {
+    padding: 0 12px;
+    position: relative;
+}
+
+.dropdown .arr-down {
+    top: 10px;
+}
+
+.search-btn {
+    width: 120px;
+    height: 40px;
+    margin-left: -1px;
+    border: none;
+    background: url(../images/index_widthlg.png) no-repeat -20px 0;
+}
+
+.search-btn:focus {
+    outline: none;
+}
+
+.search-notice {
+    width: 180px;
+    margin-left: 32px;
+    font-size: 12px;
+}
+
+.search-notice:before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #ff5500;
+    border-radius: 50% 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.hot-search {
+    width: 1190px;
+    text-align: center;
+    line-height: 40px
+}
+
+.hot-search a, .hot-search span {
+    padding: 0 6px;
+    font-size: 12px;
+}
+
+.head-nav {
+    height: 40px;
+    border-top: 2px solid #099e6a;
+    margin: 15px auto 10px;
+    background: #fcfcfc;
+    border-bottom: 1px solid #ddd;
+}
+
+.head-nav li {
+    width: 110px;
+    float: left;
+}
+
+.head-nav li a {
+    position: relative;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+}
+
+.head-nav li.current a, .head-nav li a:hover {
+    background: #099e6a;
+    color: #fff;
+}
+
+.head-nav li a span.divider {
+    position: absolute;
+    right: 0;
+    width: 1px;
+    height: 40px;
+    background: #ddd;
+}
+
+.head-nav li:first-child {
+    width: 90px;
+}
+
+aside {
+    width: 280px;
+}
+
+.sidebar + .sidebar, section.sites + section.sites {
+    margin-top: 10px;
+}
+
+.sidebar, section.sites {
+    font-family: "宋体";
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 9px 0 10px 18px;
+}
+
+.sidebar li {
+    float: left;
+    width: 50%;
+    line-height: 32px;
+    font-size: 14px;
+}
+
+.sidebar li i {
+    padding-right: 6px;
+    font-size: 18px;
+    color: #999;
+}
+
+.sidebar li a {
+    display: inline-block;
+}
+
+.sidebar li .divilder {
+    padding: 0 4px;
+    color: #888;
+}
+
+section.sites {
+
+    width: 880px;
+}
+
+section.sites .divider {
+    padding-left: 28px;
+    height: 1px;
+    overflow: hidden;
+    width: 830px;
+    background: #f1f1f1;
+    margin: 12px 0 8px;
+}
+
+section.sites ul {
+
+    width: 860px;
+
+}
+
+section.sites ul li {
+    float: left;
+    width: 134px;
+    margin: 6px 4px 4px;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: top;
+
+    position: relative;
+
+}
+
+section.sites ul li a {
+    display: inline-block;
+}
+
+section.sites ul + ul {
+    border: none;
+
+}
+
+.icon-logo {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.icon-baidu {
+    background: url(../images/defaultIcon1229.png) no-repeat 0 -200px;
+}
+
+.icon-sina {
+    background: url(../images/defaultIcon1229.png) no-repeat 0 -280px;
+}
+
+.icon-sohu {
+    background: url(../images/defaultIcon1229.png) no-repeat 0 -320px;
+}
+
+.icon-qq {
+    background: url(../images/defaultIcon1229.png) no-repeat 0 -40px;
+}
+
+.icon-163 {
+    background: url(../images/defaultIcon1229.png) no-repeat 0 -160px;
+}
+
+.icon-qqvideo {
+    background: url(../images/14.341.png) no-repeat 0 0;
+}
+
+.icon-tmall {
+    background: url(../images/tianmao2015082101.gif) no-repeat 0 0;
+}
+
+.icon-ifeng {
+    background: url(../images/defaultIcon1229.png) no-repeat 0 -240px;
+}
+
+.icon-taobao {
+    background: url(../images/defaultIcon1229.png) no-repeat 0 -360px;
+}
+
+.icon-mfgame {
+    background: url(../images/game0331.png) no-repeat 0 0;
+}
+
+.icon-4399 {
+    background: url(../images/defaultIcon1229.png) no-repeat 0 0;
+}
+
+.icon-xinhua {
+    background: url(../images/10435.png) no-repeat 0 0;
+}
+
+.icon-jd {
+    background: url(../images/21.1.png) no-repeat 0 0;
+}
+
+.icon-jhs {
+    background: url(../images/8.411.png) no-repeat 0 0;
+}
+
+.icon-sale {
+    background: url(../images/6282.png) no-repeat 0 0;
+}
+
+.icon-hao123 {
+    background: url(../images/defaultIcon1229.png) no-repeat 0 -640px;
+}
+
+.icon-auto {
+    background: url(../images/defaultIcon1229.png) no-repeat 0 -520px;
+}
+
+.icon-nuomi {
+    background: url(../images/9483.png) no-repeat 0 0;
+}
+
+.site-mange {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 24px;
+    display: inline-block;
+    height: 24px;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.site-mange i {
+
+    line-height: 24px;
+    font-size: 16px;
+    position: absolute;
+    left: 3px;
+}
+
+/**/
+a {
+    color: #666;
+    text-decoration: none;
+    -webkit-transition: color, background-color .4s linear 0s;
+    -moz-transition: color, background-color .4s linear 0s;
+    -ms-transition: color, background-color .4s linear 0s;
+    -o-transition: color, background-color .4s linear 0s;
+    transition: color, background-color .4s linear 0s;
+}
+
+a:hover {
+    color: #f50;
+    text-decoration: none;
+    -webkit-transition: color, background-color .4s linear 0s;
+    -moz-transition: color, background-color .4s linear 0s;
+    -ms-transition: color, background-color .4s linear 0s;
+    -o-transition: color, background-color .4s linear 0s;
+    transition: color, background-color .4s linear 0s;
+}
+
+.green {
+    color: #22aa22;
+}
+
+.orange {
+    color: #ff5500
+}
+
+/**/
+a {
+    color: #666;
+    text-decoration: none;
+    -webkit-transition: color, background-color .4s linear 0s;
+    -moz-transition: color, background-color .4s linear 0s;
+    -ms-transition: color, background-color .4s linear 0s;
+    -o-transition: color, background-color .4s linear 0s;
+    transition: color, background-color .4s linear 0s;
+}
+
+a:hover {
+    color: #f50;
+    text-decoration: none;
+    -webkit-transition: color, background-color .4s linear 0s;
+    -moz-transition: color, background-color .4s linear 0s;
+    -ms-transition: color, background-color .4s linear 0s;
+    -o-transition: color, background-color .4s linear 0s;
+    transition: color, background-color .4s linear 0s;
+}
+
+.green {
+    color: #22aa22;
+}
+
+.orange {
+    color: #ff5500
+}
