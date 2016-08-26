@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+    <link href="css/calc.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<div class="calc-box">
+    <form>
+        <input type="text" value="" id="valx" placeholder="输入x的值"> </p>
+        <input type="text" value="" id="valy" placeholder="输入y的值"> </p>
+        <select id="oper">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+            <option>%</option>
+            <option>加</option>
+            <option>减</option>
+            <option>乘</option>
+            <option>除</option>
+            <option>求余</option>
+        </select>
+        <input type="text" value="" id="res" placeholder="计算结果">
+        <input type="button" onClick="calc()" value="计算"/>
+        <input type="reset" value="清空"/></form>
+</div>
+<script>
+    function calc() {
+        var x = document.getElementById('valx').value;
+        var y = document.getElementById('valy').value;
+        var oper = document.getElementById('oper').value;
+        var res;
+
+        if (oper == '+' || oper == '加') {
+            res = parseFloat(x) + parseFloat(y);
+        } else if (oper == '-' || oper == '减') {
+            res = parseFloat(x) - parseFloat(y);
+        } else if (oper == '*' || oper == '乘') {
+            res = parseFloat(x) * parseFloat(y);
+        } else if (oper == '/' || oper == '除') {
+            res = parseFloat(x) / parseFloat(y);
+        } else if (oper == '%' || oper == '求余') {
+            res = parseFloat(x) % parseFloat(y);
+        }
+        if (x == '' || y == '') {
+            res = '请输入x和y的值';
+
+        }
+        document.getElementById('res').value = res;
+    }
+</script>
+</body>
+
+</html>

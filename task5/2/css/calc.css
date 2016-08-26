@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.calc-box {
+    width: 300px;
+    margin: 200px auto;
+}
+
+input,
+select {
+    margin-bottom: 10px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 12px;
+    width: 200px;
+    border: 1px solid #ddd;
+}
+
+select {
+    width: 226px;
+    height: 32px;
+    line-height: 32px;
+}
+
+input:focus,
+select:focus {
+    border-color: #66cccc;
+    outline: none;
+}
+
+input[type='button'] {
+    cursor: pointer;
+    background: #66cccc;
+    color: #fff;
+    border-color: #66cccc;
+    width: 100px;
+}
+
+input[type='reset'] {
+    cursor: pointer;
+    width: 100px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>找到数组中出现次数最多的字母，并给出个数和每一个所在的顺序。</title>
+</head>
+<body>
+<script>
+
+    var arr   = ["a","x","b","d","m","a","k","m","p","j","a"];
+    var count = {};
+    var position   = {};
+    arr.map(function(elem, index){
+        if(count[elem]){
+            count[elem]+=1;
+            position[elem] += ","+index;
+        } else {
+            count[elem] = 1;
+            position[elem]   = ""+index;
+        }
+    });
+
+    var max = 0;
+    var char;
+    for(i in count){
+        if(count[i] > max ){
+            max    = count[i];
+            char = i;
+        }
+    }
+
+    console.log("最多的是：" + char);
+    console.log("位置分布：" + position[char]);
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
