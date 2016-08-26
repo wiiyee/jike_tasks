@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>百度新闻首页</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <link rel="stylesheet" href="../static/css/app.css">
+</head>
+
+<body>
+<!-- header -->
+<header>
+    <div class="header-bar-l clearfix"><span class="page-index fl"></span> <span class="person fl"></span></div>
+    <div class="header-bar-r clearfix"><span class="search fl"></span> <span class="add fl"></span></div>
+</header>
+<!-- nav -->
+<nav class="main-nav ">
+    <div class="row">
+        <ul class="main-nav-list clearfix">
+            <li class="  col-2 "><i class="line"></i><a href="#">推荐</a><i class="line"></i></li>
+            <li class="  col-2  "><i class="line"></i><a href="#">百家</a></li>
+            <li class="  col-2  "><i class="line"></i><a href="#">本地</a></li>
+            <li class="  col-2  "><i class="line"></i><a href="#">图片</a></li>
+            <li class="  col-2  "><i class="line"></i><a href="#">娱乐</a></li>
+            <li class="  col-2"><i class="line"></i><a href="#">社会</a></li>
+            <li class="  col-2 "><i class="line"></i><a href="#">军事</a></li>
+            <li class="  col-2"><i class="line"></i><a href="#">科技</a></li>
+            <li class="  col-4"><i class="line"></i><a href="#">互联网</a></li>
+            <li class="  col-2 "><i class="line"></i><a href="#">女人</a></li>
+            <li class="  col-2  more-list"><i class="line"></i><a href="#">搞笑</a><span class="more up" data-ui="more-nav-list"><i class="arrow-up"></i>更多</span></li>
+            <li class="  col-2  none" data-ui=”more-list-none“><i class="line"></i><a href="#">生活</a></li>
+            <li class="  col-2  none" data-ui=”more-list-none“><i class="line"></i><a href="#">国际</a></li>
+            <li class="  col-2  none" data-ui=”more-list-none“><i class="line"></i><a href="#">国内</a></li>
+            <li class="  col-2  none" data-ui=”more-list-none“><i class="line"></i><a href="#">体育</a></li>
+            <li class="  col-2  none" data-ui=”more-list-none“><i class="line"></i><a href="#">汽车</a></li>
+            <li class="  col-2  none" data-ui=”more-list-none“><i class="line"></i><a href="#">财经</a></li>
+            <li class="  col-2  none" data-ui=”more-list-none“><i class="line"></i><a href="#">房产</a></li>
+            <li class="  col-2  none" data-ui=”more-list-none“><i class="line"></i><a href="#">时尚</a></li>
+            <li class="  col-2  none" data-ui=”more-list-none“><i class="line"></i><a href="#">教育</a></li>
+            <li class="  col-2  none" data-ui=”more-list-none“><i class="line"></i><a href="#">游戏</a></li>
+            <li class="  col-2  none" data-ui=”more-list-none“><i class="line"></i><a href="#">旅游</a></li>
+            <li class="  col-2  none" data-ui=”more-list-none“><i class="line"></i><a href="#">人文</a></li>
+            <li class="  col-4 none" data-ui=”more-list-none“><i class="line"></i><a href="#">创意</a></li>
+            <li class="  col-4   none" data-ui=”more-list-none“><i class="line"></i><a href="#">互联网+</a></li>
+        </ul>
+        <footer class="main-nav-footer none" data-ui="main-nav-footer">
+            <ul>
+                <li><i class="line"></i><span>记者榜</span></li>
+                <li><i class="line"></i><span>媒体榜</span></li>
+                <li><i class="line"></i><span>删除及排序</span></li>
+                <li class="up" data-ui="main-nav-footer-up"><i class="arrow-up"></i><span>收起</span></li>
+            </ul>
+        </footer>
+    </div>
+</nav>
+<!--article-新闻列表-->
+<article class="article">
+    <section class="focus">
+        <ul class="focus-list clearfix" data-ui="focus-list" data-sql="focus-list">
+            <li><a href="#">
+                <img src=" " alt="">
+                <i class="mask"></i>
+                <p class="focus-list-title"> </p>
+            </a>
+            </li>
+            <li><a href="#">
+                <img src=" " alt="">
+                <i class="mask"></i>
+                <p class="focus-list-title"> </p>
+            </a>
+            </li>
+            <li><a href="#">
+                <img src=" " alt="">
+                <i class="mask"></i>
+                <p class="focus-list-title"> </p>
+            </a>
+            </li>
+        </ul>
+        <div class="focus-index">
+            <ul class="clearfix" data-ui="focus-index-ul">
+                <li class="current"></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+    <section class="hot-news clearfix"><span class="hot-news-label fl">热点</span>
+        <ul class="hot-news-list fl" data-ui="hot-news-list" data-sql="hot-news-list">
+
+        </ul>
+    </section>
+    <ul class="news-list" data-sql="news-list">
+
+    </ul>
+    <!--侧边工具-->
+    <div class="side-tool" data-ui="side-toll"><span class="scroll-top"></span> <span class="feedback">反馈</span></div>
+</article>
+<footer>
+    <div class="load-more"><span>加载更多</span></div>
+
+</footer>
+<script src="../modules/sea.js"></script>
+<script>
+    seajs.config({
+        base: "../modules/",
+        alias: {
+            "jquery": "jquery-2.1.4.min.js"
+        }
+    });
+    seajs.use("main");
+</script>
+
+</body>
+</html>
