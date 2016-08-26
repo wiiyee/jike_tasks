@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap后台登录</title>
+    <link href="../public/stylesheets/buttons.css" rel="stylesheet">
+    <link href="../public/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="../public/stylesheets/login.css" rel="stylesheet">
+</head>
+
+<body>
+<!---------------------------布局--------------------------->
+<div class="container">
+    <div class="row">
+        <div class="login col-md-6 col-md-offset-3 col-sm-12">
+            <h3 class="login-tips  text-capitalize text-right">
+                <p>
+                    <small>Beta</small></p>
+                <p>we chat plan</p>
+            </h3>
+            <!---------------------------登录框--------------------------->
+            <div class="login-blank">
+                <div class="login-img text-center"><img src="../public/images/img01.jpg">
+                    <p class=" text-capitalize">cydia</p>
+                </div>
+                <div class="row">
+                    <form class="form-horizontal" id="login" action="../php/login.php" method="post">
+                        <div class="login-form col-md-9">
+                            <!--登录表单-->
+
+                            <div class="form-group ">
+                                <label class="col-md-4 control-label text-capitalize" for="username">user
+                                    name:</label>
+                                <div class="col-md-8">
+                                    <input id="username" name="username" type="text" class="form-control"
+                                           placeholder="请输入您的账号" required>
+                                </div>
+                            </div>
+                            <div class="form-group  ">
+                                <label class="col-md-4 control-label text-capitalize"
+                                       for="password">password:</label>
+                                <div class="col-md-8">
+                                    <input id="password" name="password"   class="form-control" placeholder="请输入您的密码"
+                                           type="password" required>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="login-form-summit col-md-3">
+                            <button class="button button-glow   button-border button-circle" type="submit" id="login_btn"><i
+                                    class="glyphicon glyphicon-send"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- -------------------------底部信息------------------------- -->
+            <div class="login-cpr text-capitalize text-center">filter.com</div>
+        </div>
+    </div>
+</div>
+<script src="../public/javascript/jquery-2.1.4.min.js"></script>
+<script src="../public/javascript/admin_login.js"></script>
+</body>
+</html>

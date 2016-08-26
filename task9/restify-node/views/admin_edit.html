@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bootstrap后台</title>
+    <!-- Bootstrap -->
+    <link href="../public/stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../public/stylesheets/cms.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!---->
+
+
+<!-----------------------左侧导航----------------------->
+<div role="navigation" id="foo" class="nav-collapse">
+    <nav>
+        <!--左侧-头像-->
+        <div class="login-img text-center"><img src="../public/images/img01.jpg">
+            <p class="  text-capitalize">cydia<span>/管理员</span></p>
+        </div>
+        <!--左侧---导航菜单-->
+        <div class="nav">
+            <ul>
+                <li class="current"><a href="#"> <i class="icon iconfont">&#xe609;</i>我的桌面</a></li>
+                <li><a href="#"> <i class="icon iconfont">&#xe607;</i>我的动态</a></li>
+                <li><a href="#"> <i class="icon iconfont">&#xe600;</i>我的下载</a></li>
+                <li><a href="#"><i class="icon iconfont">&#xe602;</i>我的订单</a></li>
+                <li><a href="#"> <i class="icon iconfont">&#xe608;</i>我的销售</a></li>
+                <li><a href="#"> <i class="icon iconfont">&#xe605;</i>我的资金</a></li>
+                <li><a href="#"> <i class="icon iconfont">&#xe603;</i>我的报表</a></li>
+                <li class="divider"></li>
+                <!--左侧---导航菜单---设置---消息-->
+                <li><a href="#"> <i class="icon iconfont">&#xe601;</i>我的设置</a></li>
+                <li><a href="#"> <i class="icon iconfont">&#xe606;</i>消息中心<span class="badge ">14</span></a></li>
+                <li class="divider"></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<!-----------------------主体右侧----------------------->
+<div class="article  main" role="main"><a href="#nav" class="nav-toggle  ">Menu</a>
+    <article>
+        <!-------------------------主体右侧----banner------------------------>
+        <section class="s-banner"></section>
+        <!-------------------------主体右侧-----当前数据------------------------->
+        <section class="s-data text-center">
+            <a class="btn btn-success " href="admin_edit.html">添加新闻</a>
+            <a class="btn btn-primary " href="admin_list.html">我的新闻</a>
+            <a class="btn btn-info " href="#">管理新闻</a>
+            <a class="btn btn-warning " href="#">更新列表</a>
+            <a class="btn btn-danger " href="#">文章回收站</a>
+        </section>
+        <div class="row">
+            <section class="  col-sm-12 col-sm-12 col-sm-12">
+                <div class="s-section">
+                    <div class="s-title  ">
+                        <h2>百度新闻列表</h2>
+                    </div>
+                    <div class="s-content">
+                        <form action="../php/admin_edit.php" method="post" id="edit_news" class="form-horizontal">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="catid" class="col-sm-2 control-label">选择频道：</label>
+                                    <div class="col-sm-6">
+                                        <select name="catid" id="catid" class="form-control" required>
+
+                                            <option value="1">推荐</option>
+                                            <option value="2">百家</option>
+                                            <option value="3">新闻</option>
+                                            <option value="4">图片</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="title" class="col-sm-2 control-label">新闻标题：</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="title" name = "title"  value="" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="imgsrc" class="col-sm-2 control-label" required>图片地址：</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="imgsrc" name = "imgsrc"  value="" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">推荐：</label>
+                                    <div class="col-sm-10">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="flag" id="flag2" value="c"> 推荐
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="flag" id="flag1" value="f"> 焦点
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="flag" id="flag2" value="h"> 热门
+                                        </label>
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="content" class="col-sm-2 control-label">新闻内容：</label>
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" rows="3" name ="content" id="content"  required></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="date" class="col-sm-2 control-label">时间：</label>
+                                    <div class="col-sm-10">
+                                        <input type="date" class="form-control" id="date" name="date" value="" required>
+                                    </div>
+                                </div>
+                                <div class="form-group text-center">
+                                    <button type="submit" class="btn btn-primary" id="submit">提交</button>
+                                    <button type="reset" class="btn btn-default">重置</button>
+                                </div>
+                            </form>
+
+                    </div>
+                </div>
+            </section>
+            <!--------------------------主体右侧-----section-4-------------------------->
+
+        </div>
+    </article>
+    <!--------------------------主体右侧-----底部版权-------------------------->
+    <footer>
+        <p class="text-center"> Copyright © 2015 | 北京filter互动信息技术有限公司 </p>
+    </footer>
+</div>
+<script src="../public/javascript/jquery-2.1.4.min.js"></script>
+<script src="../public/javascript/responsive-nav.js"></script>
+<script src="../public/javascript/admin_edit.js"></script>
+</body>
+</html>

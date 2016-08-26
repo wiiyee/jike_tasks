@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>bootstrap后台</title>
+<!-- Bootstrap -->
+<link href="../public/stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../public/stylesheets/cms.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-----------------------左侧导航----------------------->
+<div role="navigation" id="foo" class="nav-collapse">
+  <nav  > 
+    <!--左侧-头像-->
+    <div class="login-img text-center"><img src="../public/images/img01.jpg">
+      <p class="  text-capitalize">cydia<span>/管理员</span></p>
+    </div>
+    <!--左侧---导航菜单-->
+    <div class="nav">
+      <ul>
+        <li class="current"><a href="#"> <i class="icon iconfont">&#xe609;</i>我的桌面</a></li>
+        <li><a href="#"> <i class="icon iconfont">&#xe607;</i>我的动态</a></li>
+        <li><a href="#"> <i class="icon iconfont">&#xe600;</i>我的下载</a></li>
+        <li><a href="#"><i class="icon iconfont">&#xe602;</i>我的订单</a></li>
+        <li><a href="#"> <i class="icon iconfont">&#xe608;</i>我的销售</a></li>
+        <li><a href="#"> <i class="icon iconfont">&#xe605;</i>我的资金</a></li>
+        <li><a href="#"> <i class="icon iconfont">&#xe603;</i>我的报表</a></li>
+        <li class="divider"></li>
+        <!--左侧---导航菜单---设置---消息-->
+        <li><a href="#"> <i class="icon iconfont">&#xe601;</i>我的设置</a></li>
+        <li><a href="#"> <i class="icon iconfont">&#xe606;</i>消息中心<span class="badge ">14</span></a> </li>
+        <li class="divider"></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<!-----------------------主体右侧----------------------->
+<div class="article  main" role="main" > <a href="#nav" class="nav-toggle  ">Menu</a>
+  <article> 
+    <!-------------------------主体右侧----banner------------------------>
+    <section class="s-banner"></section>
+    <!-------------------------主体右侧-----当前数据------------------------->
+    <section class="s-data text-center">
+      <a class="btn btn-success " href="admin_edit.html" >添加新闻</a>
+      <a class="btn btn-primary " href="admin_list.html">我的新闻</a>
+      <a class="btn btn-info " href="#">管理新闻</a>
+      <a class="btn btn-warning " href="#">更新列表</a>
+      <a class="btn btn-danger " href="#">文章回收站</a>
+    </section>
+    <div class="admin-content"></div>
+    <div class="row">
+      <section class="  col-sm-12 col-sm-12 col-sm-12">
+        <div class="s-section">
+          <div class="s-title  ">
+            <h2>百度新闻列表</h2>
+          </div>
+          <div class="s-content" >
+              <table class="table table-responsive table-striped table-bordered" id="admin_list">
+                <thead>
+                <tr class="">
+                  <td>id</td>
+                  <td>标题</td>
+                  <td>发布时间</td>
+                  <td>推荐</td>
+                  <td>编辑</td>
+                </tr>
+                </thead>
+
+              </table>
+
+          </div>
+        </div>
+      </section>
+    </div>
+  </article>
+  <!--------------------------主体右侧-----底部版权-------------------------->
+  <footer>
+    <p class="text-center"> Copyright © 2015 | 北京filter互动信息技术有限公司 </p>
+  </footer>
+</div>
+<script src="../public/javascript/jquery-2.1.4.min.js"></script>
+<script src="../public/javascript/responsive-nav.js"></script>
+<script src="../public/javascript/admin_edit.js"></script>
+
+</body>
+</html>
