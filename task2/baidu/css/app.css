@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+* { margin: 0; padding: 0; }
+ul, li { list-style: none; }
+html, body { height: 100%; width: 100%; }
+body { color: #444; font: normal normal 12px/2em "宋体"; }
+.clearfix:after { content: "."; display: block; height: 0; visibility: hidden; clear: both; }
+.clearfix { *zoom:1;/*ie6*/}
+.fl { float: left;display:inline/*ie6*/ }
+.fr { float: right;display:inline;/*ie6*/  }
+.weight_normal { font-weight: normal!important; }
+.bold { font-weight: bold; }
+.wrapper { width: 100%; position: relative; height: 100%; min-height: 600px; }
+header, .nav, article, footer { width: 100%; position: relative; }
+.nav { margin-top: 18px; height: 30px; line-height: 30px; }
+.nav ul { position: absolute; z-index: 2; right: 0; top: 0; }
+.nav ul li { font-size: 13px; float: left; margin: 0 9px; }
+.nav ul li a { text-decoration: underline; color: #444; font-weight: bold; }
+.nav ul li a:hover { color: #5193ff; }
+.nav ul li:last-child { margin-right: 10px; }
+.nav ul li:last-child a { font-weight: normal; padding: 3px 6px; background: #317ef3; color: #fff; }
+.nav ul li:last-child a:hover { background: #68bffc; color: #fff; }
+article .lg { margin: 28px auto; display: block; width: 270px; height:129px; }
+article .search { width: 640px; margin: 0 auto; }
+article .search .input_txt { width: 518px; border: 1px solid #ddd; height: 34px; line-height: 34px; padding: 0 10px; color: #444; outline: none; }
+article .search .input_txt:hover { border-color: #222; }
+article .search .input_txt:focus{border-color:#4791ff}
+article .search .submit { width: 100px; color: #fff; height: 36px; display: block; font-size:15px; line-height: 36px; background: #317ef3; border: none; cursor: pointer; }
+article .search .submit:hover  {background:#317ef3; box-shadow:1px 1px 1px #ccc;border-bottom:1px solid #2868c8;behavior:url(ie-css3.htc)/*ie-css3*/}
+article .search .submit:focus {background:#3075dc; box-shadow:1px 1px 1px #ccc;border-bottom:1px solid #2964bb;behavior:url(ie-css3.htc)/*ie-css3*/}
+footer { line-height: 24px; font-size: 12px; height: 100px; position: absolute; bottom: 40px; width: 100%; margin: 0 auto; }
+footer .in { overflow: hidden; width: 640px; margin: 0 auto; }
+footer a { padding-right: 10px; text-decoration: underline; color: #444; }
+.qrcode_img { background: url(../images/zbios_62c636fe.png) 0 0 no-repeat; width: 60px; height: 60px; }
+.qrcode_text { margin: 8px 0 0 10px; line-height: 20px; }
+.sj_bd + .sj_bd { margin-left: 33px; }
+.ft_link { padding-top: 4px; }

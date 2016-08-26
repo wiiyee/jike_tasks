@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+}
+.cross {
+	
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -150px 0 0 -150px;
+	background: url(../images/panda2.png) no-repeat center center;
+}
+.cross i {
+	border:1px solid #fff;
+	box-sizing:border-box;
+	display: block;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	-webkit-box-shadow: 4px 4px 10px #ddd;
+	box-shadow: 4px 4px 10px #ddd;
+}
+.cross i.t {
+	top: 0;
+	left: 100px;
+	background:#4488c6;}
+	 
+.cross i.r {
+	top: 100px;
+	right: 0;
+ 	background:#5494cf;
+}
+.cross i.b {
+	left: 100px;
+	bottom: 0;
+	background:#69a3d8;}
+.cross i.l {
+	top: 100px;
+	left: 0;
+ 	background:#7fb4e4;
+}

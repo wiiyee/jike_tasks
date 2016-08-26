@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+* { margin: 0; padding: 0; }
+body { color: #444; font: normal normal 14px/2em "宋体"; }
+ul, li { list-style: none outside none; }
+.lf { float: left; }
+.text-center { text-align: center; }
+h1 { margin: 50px 0; }
+.clearfix:after { content: "."; display: block; height: 0; visibility: hidden; clear: both; }
+.clearfix { *zoom:1;
+}
+.div-box { width: 100%; height: 800px; margin: 0 auto; position: relative; }
+.box-wrap { width: 200px; height: 200px; position: absolute; left: 30%; top: 30%; border: 10px solid #f18189; box-sizing: content-box; -moz-box-sizing: content-box; -moz-box-sizing: content-box; background: #5bde5b; margin: 10px; padding: 10px; }
+.box-inner { width: 200px; height: 200px; background: #fff76b; }
+.div-box .lf { width: 50%; height: 100%; position: relative; background: #fff6e5; }
+.div-box .div-box-sizing { background: #eeffe5; }
+.div-box .div-box-sizing .box-wrap { box-sizing: border-box; -moz-box-sizing: border-box; -moz-box-sizing: border-box; }
+.column, .box-old, .flex { width: 1000px; margin: 0 auto; padding-bottom: 20px; }
+.column img { overflow: hidden; }
+.column .column-clip { -webkit-column-count: 4; -moz-column-count: 4; column-count: 4; -webkit-column-rule: 1px solid #eee; -moz-column-rule: 1px solid #eee; column-rule: 1px solid #eee; -webkit-column-gap: 40px; -moz-column-gap: 40px; column-gap: 40px; }
+.box-old-img { height: 600px; width: 100%; display: -webkit-box; display: -moz-box; display: -ms-box; background: #eeffe5; -webkit-box-align: center; -moz-box-align: center; -ms-box-align: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-box-pack: center; }
+.box-old-img img { width: 400px; height: auto; }
+.flex-in { width: 100%; display: flex; display: -webkit-flex; background: #eeffe5; height: 400px; }
+.flex-in li { flex-grow: 1; -webkit-flex-grow: 1; }
+.flex-in li.li01 { background: #eeffe5; }
+.flex-in li.li02 { background: #fff6e5; }
+.flex-in li.li03 { background: #e6f5f5; }
+.flex-r { flex-direction: row; -webkit-flex-direction: row; }
+.flex-h { flex-direction: column; -webkit-flex-direction: column; }
+.flex-order li.li01 { order: 3; -webkit-order: 3; }
+.flex-order li.li02 { order: 2; -webkit-order: 2; }
+.flex-order li.li03 { order: 1; -webkit-order: 1; }
