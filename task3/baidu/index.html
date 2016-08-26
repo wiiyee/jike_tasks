@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>百度首页</title>
+<link href="css/app.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script src="js/html5shiv.min.js"></script>
+ <![endif]-->
+</head>
+<body>
+<!--页面开始--> 
+<!--头部header开始-->
+<div class="wrapper">
+<header class="clearfix">
+  <div class="nav">
+    <ul>
+      <li ><a href="http://www.nuomi.com/" target="_blank" >糯米</a></li>
+      <li><a href="http://news.baidu.com/" target="_blank">新闻</a></li>
+      <li><a href="https://www.hao123.com/" target="_blank">hao123</a></li>
+      <li><a href="http://map.baidu.com/" target="_blank">地图</a></li>
+      <li><a href="http://v.baidu.com/" target="_blank">视频</a></li>
+      <li><a href="http://tieba.baidu.com/" target="_blank">贴吧</a></li>
+      <li><a href="#" target="_blank" class="weight_normal">登录</a></li>
+      <li><a href="#" target="_blank" class="weight_normal">设置</a></li>
+      <li  ><a href="#" target="_blank">更多产品</a></li>
+    </ul>
+  </div>
+</header>
+<!--头部header结束--> 
+<!--内容主体article开始-->
+<article>
+  <div class="lg"><img src="images/bd_logo1.png" width="270" height="129"></div>
+  <div class="search clearfix">
+    <form>
+    
+      <input type="text"  class="input_txt fl" value=""/>
+      <input type="submit" class="submit fl" value="百度一下">
+    </form>
+  </div>
+</article>
+<!--内容主体article结束--> 
+<!--底部开始-->
+<footer>
+  <div class="in clearfix">
+    <div class="ft_er fl">
+      <div class="sj_bd fl">
+        <div class="qrcode-img"></div>
+        <div class="qrcode_img fl"></div>
+        <dl class=" qrcode_text fl">
+          <dt class="bold"> 手机百度 </dt>
+          <dd>快人一步</dd>
+        </dl>
+      </div>
+      <div class="sj_bd fl">
+        <div class="qrcode-img"></div>
+        <div class="qrcode_img fl"></div>
+        <dl class=" qrcode_text fl">
+          <dt class="bold"> 手机百度 </dt>
+          <dd>快人一步</dd>
+        </dl>
+      </div>
+    </div>
+    <div class="ft_link fr">
+      <p><a href="#" target="_blank">把百度设为主页</a><a href="#" target="_blank">关于百度</a><a href="#" target="_blank">About  Baidu</a></p>
+      <p>©2015 Baidu <a href="#" target="_blank">使用百度前必读 意见反馈</a> 京ICP证030173号 </p>
+    </div>
+  </div>
+</footer>
+</div>
+<script src="js/jquery.js"></script>
+<script>
+$(document).ready(function(){
+		$(".nav li:last-child").addClass("last")
+	})
+
+</script>
+<!--底部结束-->
+</body>
+</html>
